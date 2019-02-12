@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>document</title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+
+	<div></div>
+
+	<script>
+		var x = document.createElement('h1');
+		x.innerHTML = 'Mubashir Memon';
+
+		document.getElementsByTagName('div')[0].appendChild(x);
+
+
+		var a = document.createElement('li');
+		a.innerHTML = 'this is my laptop';
+
+		document.getElementsByTagName('div')[0].appendChild(a);
+	</script>	
+</body>
+</html>

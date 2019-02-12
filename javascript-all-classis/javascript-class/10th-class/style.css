@@ -1,0 +1,20 @@
+#chennel-1{
+	position: absolute;
+	top: 48px;
+	right: 0;
+	left: 66px;
+	width: 635px;
+	height: 355px;
+}
+.main-btn{
+	background-color: black;
+	width: 200px;
+	text-align: center;
+	padding: 30px 20px;
+	border-radius: 10px;
+}
+.main-btn button{
+	width: 49%;
+	border-radius: 50px;
+	margin: 20px 0px;
+}

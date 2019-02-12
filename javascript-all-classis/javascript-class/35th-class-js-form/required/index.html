@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>required</title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+	<form name="myform">
+		<input type="text" name="name">
+		<button onclick="myfunc()">Click this</button>
+	</form>
+</body>
+<script>
+	function myfunc(){	
+		var x = document.forms['myform']['name'].value;
+		if (x == "") {
+			alert('input must be filled out');
+
+		}
+		else{
+			alert('input is success full');
+		}
+
+	}
+</script>
+</html>

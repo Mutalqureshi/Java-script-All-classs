@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>j</title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+	<h1 id="check">12.3456</h1>
+	<input type="text" id="demo">
+	<p id="dem"></p>
+	<button onclick="myfun()">cLICK ME</button>
+	<script>
+		function myfun(){
+			var x = Number(document.getElementById('check').innerHTML);
+			var y = Number(document.getElementById('demo').value);
+			document.getElementById('dem').innerHTML = x.toFixed(y);
+		}
+	</script>
+</body>
+</html>

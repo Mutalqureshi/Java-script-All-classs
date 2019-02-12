@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>java</title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+	<h1>Number</h1>
+	<input type="text" id="try">
+	<p id="demo"></p>
+	<h1>ParseInt</h1>
+	<input type="text" id="try2">
+	<p id="demo2"></p>
+	<h1>ParseFloat</h1>
+	<input type="text" id="try3">
+	<p id="demo3"></p>
+	<button onclick="myFunction()">click me</button>
+
+	<script>
+		function myFunction(){
+			var a = Number(document.getElementById('try').value);
+			document.getElementById('demo').innerHTML =a;
+			var b = parseInt(document.getElementById('try2').value);
+			document.getElementById('demo2').innerHTML =b;
+			var c = parseFloat(document.getElementById('try3').value);
+			document.getElementById('demo3').innerHTML =c;	z
+		}
+	</script>
+</body>
+</html>

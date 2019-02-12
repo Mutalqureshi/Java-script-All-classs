@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>java</title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+	<h1>
+		inter celcius to show the frenheit
+	</h1>
+	<p id="demo"></p>
+	<input type="text" placeholder="celcius" id="one" oninput="my()">
+	<h1>
+		inter frenhiet to show the celcius
+	</h1>
+	<input type="text" placeholder="frenheit" id="two" oninput="my2()">
+	<p id="demo2"></p>
+	<script>
+		function my(){
+			var c = document.getElementById('one').value;
+			document.getElementById('demo').innerHTML = (c*(9/5)) + 32;
+		}
+		function my2(){
+			var f = document.getElementById('two').value;
+			document.getElementById('demo2').innerHTML = (5/9) * (f-32);
+		}
+	</script>
+</body>
+</html>

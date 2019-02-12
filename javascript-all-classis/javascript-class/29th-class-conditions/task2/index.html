@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>task</title>
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+</head>
+<body>
+	<i class="fa fa-bars fa-4x" onclick="myfunc()"></i>
+	<nav id="try">
+		<ul>
+			<li><a href="#">Blog 1</a></li>
+			<li><a href="#">Blog 2</a></li>
+			<li><a href="#">Blog 3</a></li>
+			<li><a href="#">Blog 4</a></li>
+		</ul>
+	</nav>
+	<style>
+		a{
+			text-decoration: none;
+			color: black;
+			font: 16px arial;
+		}
+		nav#try{
+			display: none;
+		}
+		nav ul{
+			list-style: none;
+		}	
+		nav ul li a{
+			padding: 14px 22px;
+			background-color: yellow;
+			display: inline-block;
+			margin: 1px 0;
+			box-sizing: border-box;
+			border-radius: 6px;
+			transition: all ease-in-out 1s;
+		}
+		nav ul li a:hover{
+			padding: 14px 50px 14px ;
+		}
+	</style>
+	<script>
+		function myfunc(){
+			var x = document.getElementById('try');
+			if(x.style.display == 'block'){
+				x.style.display = 'none';
+			} else{
+				x.style.display = 'block';
+			}
+		}
+	</script>
+</body>
+</html>

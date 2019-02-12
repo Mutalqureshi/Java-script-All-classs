@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>java</title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+	<p id="demo"></p>
+	<button onclick="myfunc()">sort</button>
+	<button onclick="myfunc2()">reverse</button>
+	<button onclick="myfunc3()">click this</button>
+	<script>
+		var x = [100 , 19 , 38 , 89 , 120 , 430 , 12 , 1 , 45 ,4];
+		document.getElementById('demo').innerHTML = x;
+		function myfunc(){
+		x.sort(function(a,b){return a - b});
+		document.getElementById('demo').innerHTML = x;
+		}
+
+		function myfunc2(){
+			x.reverse(function(a,b){return a-b});
+			document.getElementById('demo').innerHTML = x;
+		}
+
+		function myfunc3(){
+			x.sort(function(a,b){return b-a});
+			document.getElementById('demo').innerHTML = x;
+		}
+	</script>
+</body>
+</html>

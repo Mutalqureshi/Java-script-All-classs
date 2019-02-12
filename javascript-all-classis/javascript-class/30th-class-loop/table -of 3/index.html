@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>table</title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+	<p id="demo"></p>
+	<input type="text" id="try"><br>
+
+	<button onclick="myfunc()">convert to table</button>
+	<script>
+		try{
+			function myfunc(){			 
+				var num = document.getElementById('try').value; 
+				var i = 0;
+				for(i=1; i <= 20 ; i++) {
+				    document.write(+ num +" " + 'x' +" " +  i +" "  + '='+" "  + i*num + " " + '<br>');
+				}
+			}
+		}
+		catch(abc){
+			alert(abc);
+		}
+			 
+</script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+	<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>java</title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+	<input type="text" id="check" placeholder="Enter Num">	
+	<h1>Round</h1>
+	<p id="demo"></p>
+	<h1>Ceil</h1>	
+	<p id="demo2"></p>
+	<h1>Floor</h1>	
+	<p id="demo3"></p>
+	<h1>power</h1>	
+	<input type="text" id="check2" placeholder="Enter valeu">	
+	<input type="text" id="check3" placeholder="Enter power">		
+	<p id="demo4"></p>
+	<h1>square root</h1>
+	<input type="text" id="check4" placeholder="enter sqrt value">
+	<p id="demo5"></p>
+	<button onclick="myFunc()">Click Me</button>
+	<script>
+		function myFunc(){
+			var x  = parseFloat(document.getElementById	('check').value);
+			var y  = parseFloat(document.getElementById	('check2').value);
+			var z  = parseFloat(document.getElementById	('check3').value);
+			var t = parseInt(document.getElementById ('check4').value);
+			document.getElementById('demo').innerHTML = Math.round(x);
+			document.getElementById('demo2').innerHTML = Math.ceil(x);
+			document.getElementById('demo3').innerHTML = Math.floor(x);
+			document.getElementById('demo4').innerHTML = Math.pow(y,z);
+			document.getElementById('demo5').innerHTML = Math.sqrt(t);
+		}
+	</script>
+</body>
+</html>

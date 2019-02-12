@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Comxpatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="css/font-awesome.css">
+	<style>
+		#icon2{
+			display: none;
+		}
+		.rel{
+			display: inline-block;
+			position: relative;
+		}
+		.icons{
+			position: absolute;
+			top: 0;
+			right: 10px;
+		}
+	</style>
+</head>
+<body>
+<div class="rel">
+		<input type="password" id="demo">
+	
+	<div class="icons" onclick="myFunction()">
+		<i class="fa fa-eye" id="icon1"></i>
+		<i class="fa fa-eye-slash" id="icon2"></i>
+	</div>
+</div>
+	<script>
+		function myFunction(){
+			var x = document.getElementById('demo');
+			if(x.type == "password"){
+				x.type = "text";
+				document.getElementById('icon1').style.display = "none"
+				document.getElementById('icon2').style.display = "block"
+			} else{
+				x.type = "password";
+				document.getElementById('icon2').style.display = "none"
+				document.getElementById('icon1').style.display = "block"
+			}
+		}
+	</script>
+</body>
+</html>

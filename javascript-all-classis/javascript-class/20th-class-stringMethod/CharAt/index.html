@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>javA</title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+	<p id="demo"></p>
+	<p id="demo2"></p>
+	<p id="demo3"></p>
+	<script>
+		// charAT() sirf ek word select krta he
+		var x='this is a paratice of javascript';
+		document.getElementById('demo').innerHTML = x.charAt(0);
+
+		// CharCodeAt() ye hamein btata he k browser hamare word ko kis number se prhta he
+		var y = 'this is laptop';
+		document.getElementById('demo2').innerHTML = y.charCodeAt(0);
+
+		// lafz ko tor dete he quma k baf or naya word bana deta he
+		var z = 'this is a laptop';
+		var result = z.split(' ');
+		document.getElementById('demo3').innerHTML = result[1]; 
+	</script>
+</body>
+</html>

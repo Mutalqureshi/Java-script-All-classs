@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>stringMethod</title>
+</head>
+<body>
+	<p id="demo"></p>
+	<p id="demo2"></p>
+	<p id="demo3"></p>
+	<p id="demo4"></p>
+	<p id="demo5"></p>
+	<p id="demo6"></p>
+	<p id="demo7">this is a class bag or this is class</p>
+	<p id="demo8"></p>
+	<script>
+		// sirf ek hi lafz search kare ga
+		var a = 'this is lacation of memon this is full name is mubashir memon';
+		document.getElementById('demo').innerHTML = a.search('this');
+
+		// slice ek tokra nikalta he
+		var b = "apple , banana , tomato , peaech";
+		var c = b.slice(8,15);
+		document.getElementById('demo2').innerHTML =c;
+
+		// slice negetive mein bhi likh sakte hen 
+		var d =  "apple , banana , tomato , peach ";
+		document.getElementById('demo3').innerHTML = d.slice(-15 ,-9);
+
+		// substring or slice same pr substring me negative sign nh accept hota   
+		var e = "apple , banana , tomato , peach";
+		var f = e.substring(8,15);
+		document.getElementById('demo4').innerHTML = f;
+
+		// substr mein jahan se shoru horaha he wahan ka num jitne lafz show karne hein utne num
+		var g = "apple , banana , tomato , peach";
+		var h = g.substr(17,6);
+		document.getElementById('demo5').innerHTML = h;
+
+		// ye ek  word replace krta he
+		var i = 'this is samsung laptop not samsung phone';
+		var j = i.replace('samsung','dell');
+		document.getElementById('demo6').innerHTML = j;
+
+		// ye sare word replace krta he
+		var x = document.getElementById('demo7').innerHTML;
+		var y = x.replace(/class/g,'school');
+		document.getElementById('demo7').innerHTML = y;
+
+		// case ko sensitive prhna chor de ga
+		var x = 'this is samsUng laptop not samsung phone';
+		var y = x.replace(/samsung/i,'dell');
+		document.getElementById('demo').innerHTML = y;
+
+		// concat word ko jorta he ase
+		var p = 'hello';
+		var o = p.concat(' ', 'world!');
+		document.getElementById('demo8').innerHTML = o;
+	</script>	
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>tasks</title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+	<p id="demo"></p>
+	<input type="text" id="try">
+	<button onclick="myfunction()">Find Even </button>
+	<button onclick="myfunction1()">Find odd</button>
+	<script>
+		function myfunction(){
+			var y = parseInt(document.getElementById('try').value);
+			for (var i = 0; i < y ; i++) {
+				if ((i % 2) === 0) {
+					document.write( + i + '<br>');
+				}
+			}
+		}
+		function myfunction1(){
+			var y = parseInt(document.getElementById('try').value);
+			for (var i = 0; i < y ; i++) {
+				if ((i % 2) !== 0) {
+					document.write( + i + '<br>');
+				}
+			}
+		}	
+	</script>
+</body>
+</html>

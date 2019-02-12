@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>java</title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+	<p id="demo"></p>
+	<script>
+		var x = ['Mubashir','memon', 'abdul', ' qadir' , 'hussain'];
+		x.shift();//phele ki value khatam karta he....
+		x.unshift('123'); //  0 phele value lagata he jo 0 se show ho....
+		x.push('inoxent'); // last mein ek value ko add karta hai ...
+		x.pop();// last value ko khatam krta he...
+		document.getElementById('demo').innerHTML = x.join(' ');// qoma ki jaga value lagae ga ....
+	</script>
+</body>
+</html>

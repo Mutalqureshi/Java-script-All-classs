@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>underFlow</title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+	<input type="Number" id="demo" min="100">
+	<button onclick="myfunc()">Check input</button>
+	<script>
+		function myfunc(){	
+			var x = document.getElementById('demo');
+			if (x.validity.rangeUnderflow) {
+				alert('Value is Too Small Please enter above 100');
+			}else {
+				alert('Input !s 0k');
+			}
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>java</title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+	<p id="demo"></p>
+	<input type="text" id="try">
+	<p id="demo2"></p>
+	<input type="text" id="try2">
+	<button onclick="myfunc()">click</button>
+	<script>
+		function myfunc(){
+		var x = parseInt(document.getElementById('try').value); 
+		document.getElementById('demo').innerHTML = x.toExponential(3);
+		var x = parseInt(document.getElementById('try2').value); 
+		document.getElementById('demo2').innerHTML = x.toFixed(3);
+		}
+	</script>
+</body>
+</html>

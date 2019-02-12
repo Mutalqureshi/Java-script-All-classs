@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>tasks</title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+	<input type="text" id="try">
+	<button onclick="myfunc()">CHECK</button>
+	<script>
+		var x = Math.round(Math.random() * 10);
+		var check = 0;
+		function myfunc(){
+			check++;
+			var y = document.getElementById('try');
+			if (y.value == x) {
+				alert('you are a winner');
+			} else{
+				alert('try again');
+			}
+
+			if (check == 3) {
+				document.getElementById('try').readOnly = true;
+			}
+		}
+
+	</script>
+</body>
+</html>

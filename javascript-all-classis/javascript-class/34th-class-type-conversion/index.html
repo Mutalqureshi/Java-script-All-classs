@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>type conversion</title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+	<p id="demo"></p>
+	<p id="demo2"></p>
+	<p id="demo3"></p>
+	<script>
+		var a = ['mubashir'];
+		var b = ['mubashir'];
+		var c = ['mubashir'];
+		var d = ['mubashir'];
+		var e= ['mubashir'];
+			document.getElementById('demo').innerHTML = a.constructor; 
+			document.getElementById('demo2').innerHTML = Array.isArray(a); 
+			document.getElementById('demo3').innerHTML = a instanceof Array; 
+	</script>
+</body>
+</html>

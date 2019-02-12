@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>java</title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+	<p id="demo">Show dates</p>
+	<button onclick="myFunc()">Click Me</button>
+	<p id="demo2">Show dates</p>
+	<button onclick="myFunc2()">Click Me</button>
+	<p id="demo3">Show dates</p>
+	<button onclick="myFunc3()">Click Me</button>
+	<p id="demo4">Show dates</p>
+	<button onclick="myFunc4()">Click Me</button>
+	<p id="demo5">Show dates</p>
+	<button onclick="myFunc5()">Click Me</button>
+	<p id="demo6">Show dates</p>
+	<button onclick="myFunc6()">Click Me</button>
+	<script>
+		function  myFunc(){
+			document.getElementById('demo').innerHTML = Date();
+		}
+		function  myFunc2(){
+			document.getElementById('demo2').innerHTML = Date().toString();
+		}
+		function  myFunc3(){
+			document.getElementById('demo3').innerHTML =new Date().toUTCString();
+		}
+		function  myFunc4(){
+			document.getElementById('demo4').innerHTML =new Date().toDateString();
+		}
+		// phele year phr month phr date
+		function  myFunc5(){
+			document.getElementById('demo5').innerHTML =new Date(97,7,23);
+		}
+		// phele year phr month phr date phr ganta phr minute phr second phr mili second
+		function  myFunc6(){
+			document.getElementById('demo6').innerHTML =new Date(97,7,23,20,45,20,0);
+		}
+	</script>
+</body>
+</html>

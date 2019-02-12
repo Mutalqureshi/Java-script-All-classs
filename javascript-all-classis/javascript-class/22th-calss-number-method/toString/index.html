@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>java</title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+	<input type="text" id="check">
+	<p id="demo">Hexadecimal</p>
+	<p id="demo2">Octal</p>
+	<p id="demo3">Binary</p>
+	<button onclick="myFunc()">Check me</button>
+	<script>	
+		function myFunc(){
+		var x = parseInt(document.getElementById('check').value);
+		var y = document.getElementById('demo').innerHTML = x.toString(16);
+		var z = document.getElementById('demo2').innerHTML = x.toString(8);
+		var t = document.getElementById('demo3').innerHTML = x.toString(2);
+		}
+	</script>
+</body>
+</html>

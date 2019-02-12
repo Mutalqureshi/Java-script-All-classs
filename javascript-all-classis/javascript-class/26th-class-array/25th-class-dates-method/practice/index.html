@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>date method</title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+	<h1>Date</h1>
+	<p id="demo"></p>
+	<h1>Day</h1>
+	<p id="demo2"></p>
+	<h1>Year</h1>
+	<p id="demo3"></p>
+	<h1>Hours</h1>
+	<p id="demo4"></p>
+	<h1>Milisecond</h1>
+	<p id="demo5"></p>
+	<h1>Minute</h1>
+	<p id="demo6"></p>
+	<h1>Month</h1>
+	<p id="demo7"></p>
+	<h1>Second</h1>
+	<p id="demo8"></p>
+	<h1>Time</h1>
+	<p id="demo9"></p>
+	<script>
+		// ye sirf Date show kare ga
+		document.getElementById('demo').innerHTML = new Date().getDate();
+		// ye sirf Day show kare ga
+		document.getElementById('demo2').innerHTML = new Date().getDay();
+		// ye sirf Year show kare ga
+		document.getElementById('demo3').innerHTML = new Date().getFullYear();
+		// ye sirf Hour show kare ga
+		document.getElementById('demo4').innerHTML = new Date().getHours();
+		// ye sirf Milli second  show kare ga
+		document.getElementById('demo5').innerHTML = new Date().getMilliseconds();
+		// ye sirf Minute show kare ga
+		document.getElementById('demo6').innerHTML = new Date().getMinutes();
+		// ye sirf month show kare ga
+		document.getElementById('demo7').innerHTML = new Date().getMonth();
+		// ye sirf Second show kare ga
+		document.getElementById('demo8').innerHTML = new Date().getSeconds();
+		// ye sirf Time show kare ga lekin mili second pe
+		document.getElementById('demo9').innerHTML = new Date().getTime();
+	</script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>bom</title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+	<p id="demo"></p>
+	<p id="demo2"></p>
+	<p id="demo3"></p>
+	<script>
+		function myFunction(){
+			var x = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+			var y = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+
+
+			var c = screen.width;
+			var d = screen.height;
+
+			var e = screen.availWidth;
+			var f = screen.availHeight;
+
+
+			
+			document.getElementById('demo').innerHTML = 'Browser Width is ' +  x + "px" + " <br>" + 'Browser Height is ' +  y + "px";
+			document.getElementById('demo2').innerHTML =  'screnn total Width is ' +  c + "px" + " <br>" + 'screen total Height is ' +  d + "px";
+			document.getElementById('demo3').innerHTML =  'screnn available Width is ' +  e + "px" + " <br>" + 'screen available Height is ' +  f + "px";
+		}
+		setInterval(myFunction, 1);
+	</script>
+</body>
+</html>	

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>tasks</title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+	<select id="one">
+		<option>Select one</option>
+		<option>Male</option>
+		<option>Female</option>
+	</select>
+	<select id="two">
+		<option>Select one</option>
+		<option>Under 20</option>
+		<option>Above 20</option>
+	</select>
+	<button onclick="myfunc()">Check it</button>
+	<p id="demo"></p>
+	<script>
+		function myfunc(){
+			var x = document.getElementById('one'); 
+			var y = document.getElementById('two');
+			if (x.value == 'Male' && y.value == "Under 20") {
+				window.open('men-under.html' , "_self");
+			}else if (x.value == 'Male' && y.value == "Above 20") {
+				window.open('men-above.html' , "_self");
+			}else if (x.value == 'Female' && y.value == "Under 20") {
+				window.open('<female-under class="ht"></female-under>ml' , "_self");
+			}else if (x.value == 'Female' && y.value == "Above 20") {
+				window.open('female-above.html' , "_self");
+			}else{
+				alert('please select other input');
+			}
+		}
+	</script>
+</body>
+</html>

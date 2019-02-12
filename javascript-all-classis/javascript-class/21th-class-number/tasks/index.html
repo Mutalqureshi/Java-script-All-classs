@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>java</title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+	<h2>Enter Decimal</h2>
+	<input type="text" id="try"><br>
+	<hr>
+	<button onclick="myfunc()">convert</button>
+	<h2>Convert Hexadecimal</h2>
+	<p id="demo"></p>
+	<h2>Convert Octal</h2>
+	<p id="demo2"></p>
+	<h2>Convert Binary</h2>
+	<p id="demo3"></p>
+	<script>
+		function myfunc(){
+			var x = parseInt(document.getElementById('try').value);
+			document.getElementById('demo').innerHTML = x.toString(16);
+			document.getElementById('demo2').innerHTML = x.toString(8);
+			document.getElementById('demo3').innerHTML = x.toString(2);
+		}
+	</script>
+</body>
+</html>

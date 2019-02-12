@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>prompt</title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+	<p id="demo"></p>
+	<button onclick="myfunc()">Please alert</button>
+	<script>
+		function myfunc(){
+			var x = prompt('PleasE enteR yOuR nAmE' , 'Salman Khan');
+			if (x == null || x == '') {
+				var y = 'user is not availed';
+			}else{
+					var y = x + '! Is a Dangerous Viruss'; 
+			}
+			document.getElementById('demo').innerHTML = y;
+		}
+	</script>
+</body>
+</html>

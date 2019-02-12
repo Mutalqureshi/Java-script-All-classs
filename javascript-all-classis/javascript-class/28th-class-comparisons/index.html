@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>java</title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+	<p id="demo">!=</p>
+	<p id="demo2">>=</p>
+	<p id="demo3">&&</p>
+	<p id="demo4">||</p>
+	<button onclick="myfunc()">check</button>
+	<script>
+		function myfunc(){
+		var x  = 30;
+		var y  = 'mubashir';
+		document.getElementById('demo').innerHTML = (x !=  y);
+
+		// ye phele greater dekhe ga phr equal dkhe ga done mein se agr ek bh hwa to ans true de ga 
+		var a = 125;
+		var b = 70;
+		document.getElementById('demo2').innerHTML = (a >= b);
+
+		//agr sab sahi honge to ye true de warna agr ek bh galat howa to ye false dega
+		var c = (x <10 && a > 100);
+		document.getElementById('demo3').innerHTML = c;
+
+
+		// sab false howe to false de ga or agr ek bh true howa to true de ga
+		var d = (a == 125 || a < 100);
+		document.getElementById('demo4').innerHTML = d;
+		}
+	</script>
+</body>
+</html>

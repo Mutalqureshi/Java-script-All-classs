@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>java</title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+	<h1>Day</h1>
+	<p id="demo"></p>
+
+	<h1>Date</h1>
+	<p id="demo2"></p>
+
+	<h1>Year</h1>
+	<p id="demo3"></p>
+
+	<h1>Hour</h1>
+	<p id="demo4"></p>
+
+	<h1>Milli second</h1>
+	<p id="demo5"></p>
+
+	<h1>Minutes</h1>
+	<p id="demo6"></p>
+
+	<h1>Month</h1>
+	<p id="demo7"></p>
+
+	<h1>Seconds</h1>
+	<p id="demo8"></p>
+
+	<h1>Time</h1>
+	<p id="demo9"></p>
+	<button onclick="myFunc()">Show anything</button>
+	<script>
+		function myFunc(){
+		var x = new Date();
+		// ye hafte ka din show kare ga;
+		document.getElementById('demo').innerHTML = x.getDay();
+		// ye user k laptop k date batae ga
+		document.getElementById('demo2').innerHTML = x.getDate();
+		// ye sirf year batae ga
+		document.getElementById('demo3').innerHTML = x.getFullYear();
+		// ye jo user k time ho ga ho us ka hour batae ga
+		document.getElementById('demo4').innerHTML = x.getHours();
+		// ye jo user k milli second ho ga wo batae ga
+		document.getElementById('demo5').innerHTML = x.getMilliseconds();
+		// ye jo user k minute ho ga wo batae ga
+		document.getElementById('demo6').innerHTML = x.getMinutes();
+		// ye jo user k Month ho ga wo batae ga lekin ye 0 se parhe ga
+		document.getElementById('demo7').innerHTML = x.getMonth();
+		// ye jo user k Second ho ga wo batae ga
+		document.getElementById('demo8').innerHTML = x.getSeconds();
+		// ye jo user k Time ho ga wo batae ga lekin mili second me batae ga
+		document.getElementById('demo9').innerHTML = x.getTime();
+	}
+	</script>
+</body>
+</html>
